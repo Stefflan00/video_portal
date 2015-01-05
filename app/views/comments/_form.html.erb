@@ -1,0 +1,8 @@
+<%= form_for [commentable, Comment.new] do |f| %>
+  <div class="form-group">
+    <%= f.label "leave a comment" %>
+    <%= f.text_area :body, class: "form-control", placeholder: "add a comment here" %>
+  </div>
+    <%= f.submit class: "btn btn-primary" %>
+
+<% end %>
